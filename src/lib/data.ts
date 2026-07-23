@@ -1,12 +1,13 @@
 export const firm = {
-  name: "Arvind B Reddy",
+  name: "Arvind B Reddy Law Chambers",
   fullName: "Arvind B Reddy Law Chambers",
-  shortName: "Adv. Arvind B. Reddy",
+  shortName: "Arvind B Reddy Law Chambers",
+  advocateName: "Adv. Arvind B. Reddy",
   title: "Advocate & Legal Counsel",
   tagline: "Your Trusted Partner For Legal Solutions",
   subtitle:
     "Adv. Arvind B. Reddy (B.E., LL.B.) brings 10+ years of courtroom and advisory experience to civil, criminal, constitutional, commercial, property, and family matters across Bengaluru.",
-  eyebrow: "Advocate & Legal Counsel · Bengaluru",
+  eyebrow: "Arvind B Reddy Law Chambers · Bengaluru",
   since: 2015,
   yearsExperience: "10+",
   enrolment: "KAR/1271/2015",

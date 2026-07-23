@@ -20,12 +20,13 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Arvind B Reddy | Advocate & Legal Counsel in Bengaluru",
+  title: "Arvind B Reddy Law Chambers | Advocate & Legal Counsel in Bengaluru",
   description:
-    "Adv. Arvind B. Reddy (B.E., LL.B.) — trusted legal counsel in Bengaluru with 10+ years' experience. Civil, criminal, constitutional, commercial, property, family and arbitration matters. Enrolment KAR/1271/2015.",
+    "Arvind B Reddy Law Chambers — Adv. Arvind B. Reddy (B.E., LL.B.) provides trusted legal counsel in Bengaluru with 10+ years' experience. Civil, criminal, constitutional, commercial, property, family and arbitration matters. Enrolment KAR/1271/2015.",
   keywords: [
     "advocate Bengaluru",
     "lawyer Bangalore",
+    "Arvind B Reddy Law Chambers",
     "Arvind B Reddy",
     "civil lawyer Bengaluru",
     "criminal lawyer Bangalore",
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     "family law advocate Bangalore",
   ],
   openGraph: {
-    title: "Arvind B Reddy | Advocate & Legal Counsel in Bengaluru",
+    title: "Arvind B Reddy Law Chambers | Advocate & Legal Counsel in Bengaluru",
     description:
       "Precision advocacy for civil, criminal, constitutional, and commercial legal matters in Bengaluru.",
     type: "website",
@@ -53,8 +54,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Attorney",
-      name: firm.name,
+      name: firm.advocateName,
       jobTitle: firm.title,
+      worksFor: {
+        "@type": "LegalService",
+        name: firm.name,
+      },
       description: firm.subtitle,
       url: firm.domain,
       telephone: contact.phoneDisplay,
@@ -77,7 +82,7 @@ const jsonLd = {
     },
     {
       "@type": "LegalService",
-      name: firm.fullName,
+      name: firm.name,
       url: firm.domain,
       telephone: contact.phoneDisplay,
       email: contact.email,
@@ -99,7 +104,7 @@ const jsonLd = {
     },
     {
       "@type": "LocalBusiness",
-      name: firm.fullName,
+      name: firm.name,
       image: `${firm.domain}/images/optimized/hero-lawyer.webp`,
       telephone: contact.phoneDisplay,
       email: contact.email,

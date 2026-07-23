@@ -12,7 +12,9 @@ export default function Footer() {
             <p className="font-display text-lg font-semibold text-white">
               {firm.name}
             </p>
-            <p className="mt-1 text-sm text-gold-light">{firm.title}</p>
+            <p className="mt-1 text-sm text-gold-light">
+              {firm.advocateName} · {firm.title}
+            </p>
             <p className="mt-4 max-w-xs text-sm leading-relaxed">
               B.E. · LL.B. · {firm.yearsExperience} years&apos; experience
               serving Bengaluru.

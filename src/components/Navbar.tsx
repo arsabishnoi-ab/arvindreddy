@@ -59,8 +59,8 @@ export default function Navbar() {
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gold/15 text-gold">
             <ScalesIcon className="h-4 w-4" />
           </span>
-          <span className="hidden font-display text-[0.9375rem] font-semibold tracking-wide sm:block">
-            {firm.shortName}
+          <span className="hidden max-w-[11rem] font-display text-[0.8125rem] font-semibold leading-tight tracking-wide sm:block lg:max-w-none lg:text-[0.9375rem]">
+            {firm.name}
           </span>
         </Link>
 

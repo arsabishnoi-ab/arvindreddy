@@ -72,10 +72,13 @@ export default function Hero() {
               />
               <figcaption className="rounded-b-[27px] border-t border-gold/15 bg-darkest px-5 py-4 text-left">
                 <p className="font-display text-xl font-semibold text-white">
-                  {firm.shortName}
+                  {firm.name}
                 </p>
                 <p className="mt-1 text-sm font-normal tracking-wide text-gold-light">
-                  {firm.title} · Bar Council of {firm.barCouncil}
+                  {firm.advocateName} · {firm.title}
+                </p>
+                <p className="mt-0.5 text-xs text-white/50">
+                  Bar Council of {firm.barCouncil}
                 </p>
                 <p className="mt-1.5 text-xs text-white/40">
                   Enrolment {firm.enrolment} · Practising since {firm.since}
